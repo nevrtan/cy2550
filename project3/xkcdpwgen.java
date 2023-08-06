@@ -9,7 +9,7 @@ public class xkcdpwgen {
   public static void main(String[] args) throws FileNotFoundException {
 
 
-    File words = new File("/home/nev/cy25502/cy2550/project3/words_alpha.txt");
+    File words = new File("/home/nev/cy25502/cy2550/project3/words.txt");
 
     int caps = -1;
     int symbols = -1 ;
