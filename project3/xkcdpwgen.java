@@ -1,4 +1,3 @@
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -10,7 +9,7 @@ public class xkcdpwgen {
   public static void main(String[] args) throws FileNotFoundException {
 
 
-    File words = new File("/Users/nevintaneja/Desktop/CyberSecurity/words_alpha.txt");
+    File words = new File("/home/nev/cy25502/cy2550/project3/words_alpha.txt");
 
     int caps = -1;
     int symbols = -1 ;
