@@ -7,7 +7,8 @@ import java.util.Scanner;
 public class xkcdpwgen {
 
   public static void main(String[] args) throws FileNotFoundException {
-
+  
+  System.out.println("HERE");
 
     File words = new File("/home/nev/cy25502/cy2550/project3/words.txt");
 
@@ -92,8 +93,6 @@ public class xkcdpwgen {
       int min = 1;
       int max = 90000;
       int scanMove = (int) ((Math.random() * (max - min)) + min);
-
-      System.out.print(scanMove + "\n");
       int count = 0;
 
       while (count < scanMove) {
@@ -155,18 +154,4 @@ public class xkcdpwgen {
 
   }
 
-
-  public static String addSymbols(int numOfCaps, String toBeChanged) {
-
-    int count = 0;
-    while (count < numOfCaps) {
-
-      int length = toBeChanged.length();
-      int min = 0;
-      int max = length - 1;
-      int randSelect = (int) ((Math.random() * (max-min)) + min);
-    }
-
-    return "";
-  }
 }
