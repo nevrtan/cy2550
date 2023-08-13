@@ -16,7 +16,7 @@ public class xkcdpwgen {
     String fileName = "words.txt";
 
     Path currentDirectory = Paths.get("");
-    Path filePath = currentDirectory.resolve(fileName)
+    Path filePath = currentDirectory.resolve(fileName);
     
 
     
