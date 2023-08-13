@@ -2,6 +2,6 @@ FILES = xkcdpwgen.java
 all:
 	javac -g $(FILES)
 run:
-	./<MAIN_CLASS>
+	./xkcdpwgen
 clean:
 	rm *.class
