@@ -9,8 +9,12 @@ RUN_SCRIPT = run_xkcdpwgen
 
 .PHONY: all clean
 
-all: $(JAVA_SRC) $(RUN_SCRIPT)
+all: $(PROGRAM_NAME) $(RUN_SCRIPT)
+
+$(PROGRAM_NAME): $(JAVA_SRC)
 	javac $(JAVA_SRC)
+
+$(RUN_SCRIPT): $(PROGRAM_NAME)
 	echo "#!/bin/bash" > $(RUN_SCRIPT)
 	echo "java $(PROGRAM_NAME) \"\$$@\"" >> $(RUN_SCRIPT)
 	chmod +x $(RUN_SCRIPT)
