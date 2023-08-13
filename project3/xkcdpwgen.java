@@ -3,13 +3,24 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class xkcdpwgen {
 
   public static void main(String[] args) throws FileNotFoundException {
- 
 
-    File words = new File("/home/nev/cy25502/cy2550/project3/words.txt");
+
+    
+
+    String fileName = "words.txt";
+
+    Path currentDirectory = Paths.get("");
+    Path filePath = currentDirectory.resolve(fileName)
+    
+
+    
+    File words = filePath.toFile();
 
     int caps = -1;
     int symbols = -1 ;
