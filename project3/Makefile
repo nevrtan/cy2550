@@ -9,13 +9,8 @@ $(CLASS): $(SRC)
 	$(JAVAC) $<
 	
 
-
-run: all
-	$(JAVA) $(basename $(CLASS)) $(ARGS)
-	
-
 clean:
 	rm -f $(CLASS)
 	
 .PHONY:
-.DEFAULT_GOAL := run
+.DEFAULT_GOAL := all
