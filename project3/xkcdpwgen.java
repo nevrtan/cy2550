@@ -7,8 +7,7 @@ import java.util.Scanner;
 public class xkcdpwgen {
 
   public static void main(String[] args) throws FileNotFoundException {
-  
-  System.out.println("HERE");
+ 
 
     File words = new File("/home/nev/cy25502/cy2550/project3/words.txt");
 

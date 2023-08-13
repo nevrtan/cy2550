@@ -1,7 +1,21 @@
-FILES = xkcdpwgen.java
-all:
-	javac -g $(FILES)
-run:
-	./xkcdpwgen
+JAVAC = javac
+JAVA = java
+SRC = xkcdpwgen.java
+CLASS = xkcdpwgen.class
+
+all: $(CLASS)
+
+$(CLASS): $(SRC)
+	$(JAVAC) $<
+	
+
+
+run: all
+	$(JAVA) $(basename $(CLASS)) $(ARGS)
+	
+
 clean:
-	rm *.class
+	rm -f $(CLASS)
+	
+.PHONY:
+.DEFAULT_GOAL := run
